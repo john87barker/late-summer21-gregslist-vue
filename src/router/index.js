@@ -21,7 +21,7 @@ const routes = [
     component: CarDetailsPage
   },{
     // required param ':id'
-    path: '/house-details/',
+    path: '/house-details/:id',
     name: 'HouseDetails',
     component: HouseDetailsPage
   }
