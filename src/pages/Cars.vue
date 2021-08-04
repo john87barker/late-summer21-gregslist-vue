@@ -1,5 +1,5 @@
 <template>
-  <div class="home container-fluid">
+  <div class="cars container-fluid">
     <div class="row">
       <div class="col">
         <CarForm />
