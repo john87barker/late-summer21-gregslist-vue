@@ -1,7 +1,8 @@
 <template>
   <div class="car-form bg-secondary">
-    <form class="d-flex" @submit.prevent="createCar">
-      <div class="form-group ">
+    <h1 class="text-center mt-3">Vehicles</h1>
+    <form class="d-flex mx-3" @submit.prevent="createCar">
+      <div class="form-group mx-1 ">
         <label for="make"></label>
         <input
           type="text"
@@ -12,7 +13,7 @@
           required
         />
       </div>
-      <div class="form-group">
+      <div class="form-group mx-1">
         <label for="model"></label>
         <input
           type="text"
@@ -23,7 +24,7 @@
           required
         />
       </div>
-      <div class="form-group">
+      <div class="form-group mx-1">
         <label for="year"></label>
         <input
           type="number"
@@ -36,7 +37,7 @@
           max="2021"
         />
       </div>
-      <div class="form-group">
+      <div class="form-group mx-1">
         <label for="price"></label>
         <input
           type="number"
@@ -48,7 +49,7 @@
           min="1"
         />
       </div>
-      <div class="form-group">
+      <div class="form-group mx-1">
         <label for="imgUrl"></label>
         <input
           type="text"
@@ -58,7 +59,7 @@
           placeholder="Url..."
         />
       </div>
-      <div class="form-group">
+      <div class="form-group mx-1">
         <label for="description"></label>
         <input
           type="text"
