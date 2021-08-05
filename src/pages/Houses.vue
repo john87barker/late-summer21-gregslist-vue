@@ -1,12 +1,12 @@
 <template>
-  <div class="cars container-fluid">
+  <div class="houses container-fluid bg-secondary">
     <div class="row">
-      <div class="col">
+      <div class="col mb-2">
         <HouseForm />
       </div>
     </div>
     <div class="row">
-      <div class="col-4" v-for="h in houses" :key="h.id">
+      <div class="col-4 mb-5" v-for="h in houses" :key="h.id">
         <!-- Data passed through prop ':car' to child -->
         <HouseCard :house="h"/>
       </div>

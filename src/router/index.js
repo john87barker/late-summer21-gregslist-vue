@@ -3,11 +3,16 @@ import CarDetailsPage from '../pages/CarDetailsPage.vue'
 import Cars from '../pages/Cars.vue'
 import HouseDetailsPage from '../pages/HouseDetailsPage.vue'
 import Houses from '../pages/Houses.vue'
+import Home from '../pages/Home.vue'
 
 const routes = [
   {
     path: '/',
     name: 'Home',
+    component: Home
+  }, {
+    path: '/cars',
+    name: 'Car',
     component: Cars
   }, {
     path: '/houses',

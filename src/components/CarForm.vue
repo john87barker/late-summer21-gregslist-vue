@@ -1,8 +1,8 @@
 <template>
-  <div class="car-form">
+  <div class="car-form bg-secondary">
     <form class="d-flex" @submit.prevent="createCar">
-      <div class="form-group">
-        <label for="make">Make</label>
+      <div class="form-group ">
+        <label for="make"></label>
         <input
           type="text"
           name="make"
@@ -13,7 +13,7 @@
         />
       </div>
       <div class="form-group">
-        <label for="model">Model</label>
+        <label for="model"></label>
         <input
           type="text"
           name="model"
@@ -24,7 +24,7 @@
         />
       </div>
       <div class="form-group">
-        <label for="year">Year</label>
+        <label for="year"></label>
         <input
           type="number"
           name="year"
@@ -37,7 +37,7 @@
         />
       </div>
       <div class="form-group">
-        <label for="price">Price</label>
+        <label for="price"></label>
         <input
           type="number"
           name="price"
@@ -49,7 +49,7 @@
         />
       </div>
       <div class="form-group">
-        <label for="imgUrl">Image Url</label>
+        <label for="imgUrl"></label>
         <input
           type="text"
           name="imgUrl"
@@ -59,7 +59,7 @@
         />
       </div>
       <div class="form-group">
-        <label for="description">Description</label>
+        <label for="description"></label>
         <input
           type="text"
           name="description"

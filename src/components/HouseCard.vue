@@ -1,5 +1,5 @@
 <template>
-  <div class="house m-2 bg-light shadow">
+  <div class="house m-2 bg-light shadow grow">
     <router-link :to="{name: 'HouseDetails', params: {id: house.id}}" >
       <img :src="house.imgUrl" alt="" class="w-100">
       <div class="p-3">
@@ -26,4 +26,12 @@ export default {
 
 <style lang="scss" scoped>
 
+
+.grow { 
+transition: all .2s ease-in-out; 
+}
+
+.grow:hover { 
+transform: scale(1.1); 
+}
 </style>

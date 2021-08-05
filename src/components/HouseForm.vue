@@ -1,10 +1,10 @@
 <template>
-  <div class="row bg-success">
+  <div class="row bg-secondary">
           <div class="col mt-5">
               <h1 class="text-center mb-4">- - -Houses- - -</h1>
-              <form class="d-flex justify-content-around" @submit.prevent="createHouse">
+              <form class="d-flex justify-content-around pb-3" @submit.prevent="createHouse">
                   <div class="form-group m-1">
-                      <label for="bedrooms">Bedrooms</label>
+                      <label for="bedrooms"></label>
                       <input 
                       type="text" 
                       name="bedrooms" 
@@ -15,7 +15,7 @@
                       />
                   </div>
                   <div class="form-group m-1">
-                      <label for="bathrooms">Bathrooms</label>
+                      <label for="bathrooms"></label>
                       <input 
                       type="text" 
                       name="bathrooms" 
@@ -26,7 +26,7 @@
                       />
                   </div>
                   <div class="form-group m-1">
-                      <label for="year">Year Built</label>
+                      <label for="year"></label>
                       <input 
                       type="number" 
                       name="year" 
@@ -37,7 +37,7 @@
                       min="0">
                   </div>
                   <div class="form-group m-1">
-                      <label for="price">Price</label>
+                      <label for="price"></label>
                       <input 
                       type="number" 
                       name="price" 
@@ -47,7 +47,7 @@
                       required min="1">
                   </div>
                   <div class="form-group m-1">
-                      <label for="levels">Levels</label>
+                      <label for="levels"></label>
                       <input 
                       type="number" 
                       name="levels" 
@@ -57,7 +57,7 @@
                       required min="1">
                   </div>
                   <div class="form-group m-1">
-                      <label for="imgUrl">Image Url</label>
+                      <label for="imgUrl"></label>
                       <input 
                       type="text" 
                       name="imgUrl" 
@@ -65,7 +65,7 @@
                       class="form-control" placeholder="Url...">
                   </div>
                   <div class="form-group m-1">
-                      <label for="description">Description</label>
+                      <label for="description"></label>
                       <input 
                       type="text" 
                       name="description" 
