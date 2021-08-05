@@ -1,7 +1,12 @@
 <template>
   <div class="row bg-secondary">
           <div class="col mt-5">
-              <h1 class="text-center mb-4">- - -Houses- - -</h1>
+              <h1 class="text-center mb-4">
+                <div>        _____   </div>
+                <div>     /______\    </div>
+                <div>     |Houses|    </div>
+                <div> - - |___🚪___| - -</div>
+                </h1>
               <form class="d-flex justify-content-around pb-3" @submit.prevent="createHouse">
                   <div class="form-group m-1">
                       <label for="bedrooms"></label>
