@@ -1,15 +1,18 @@
 <template>
-  <div class="car-details-page">
+  <div class="car-details-page mt-3 col-md-6 offset-3 border border-secondary">
+    <div class="text-center">
     <h1>Welcome to the car details</h1>
-    {{car.make}} - {{car.model}}
+   <h3> {{car.make}} - {{car.model}}</h3>
     <br>
     {{car.description}}
-
-    <button class="btn btn-danger" @click="destroy">Delete</button>
+    </div>
+    <div class="d-flex justify-content-center">
+      <button class="btn btn-danger m-3 " @click="destroy">Delete</button>
+    </div>
   </div>
 </template>
 
-
+ 
 <script>
 import { computed, onMounted } from '@vue/runtime-core'
 import { AppState } from '../AppState'

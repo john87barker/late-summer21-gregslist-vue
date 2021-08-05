@@ -79,7 +79,7 @@
                       placeholder="Description..." 
                       maxlength="240">
                   </div>
-                  <div class="d-flex align-items-center">
+                  <div class="d-flex align-items-center pt-2">
                       <button type="submit" class="btn btn-outline-primary">Add</button>
                   </div>
               </form>

@@ -70,7 +70,7 @@
           maxlength="240"
         />
       </div>
-      <div class="d-flex align-items-center">
+      <div class="d-flex align-items-center pt-2">
         <button type="submit" class="btn btn-outline-success">Add</button>
       </div>
     </form>
