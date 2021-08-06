@@ -1,5 +1,5 @@
 <template>
-      <div class="car m-2 bg-light shadow grow">
+      <div class="car m-2 bg-light shadow grow rounded">
         <!-- passing required param ':id' -->
         <router-link :to="{name: 'CarDetails', params: {id: car.id}}">
           <img :src="car.imgUrl" class="w-100" :alt="car.make">

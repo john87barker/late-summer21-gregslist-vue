@@ -1,11 +1,9 @@
 <template>
   <div class="job-details-page text-center ">
     <h2 class="m-4">Job:</h2>
-    <div class="row m-5">
-      <div class="col-md-6 border border-secondary ">
-        Will it be pretty?
-      </div>
-      <div class="col-md-6 border border-secondary" >
+    <div class="row m-5 b-1">
+     
+      <div class="col-md-6 offset-3 border border-secondary" >
         <h3 class="mt-5">
         {{jobs.jobTitle}}  - {{jobs.company}} 
         </h3>
@@ -13,14 +11,14 @@
         {{jobs.description}}
         <br>
         <h5 class="pt-3">
-        Price per Hour: ${{jobs.rate}}
+        Pay per Hour: ${{jobs.rate}}
         </h5>
         <div>
         <button class="btn btn-danger m-3" @click="destroy">Delete</button>
         </div>
       </div>
     </div>  
-    <h1 class="font-italic mt-5">Is this your future home?</h1>
+    <h1 class="font-italic mt-5">If you are interested in this job please find it on LinkedIn.</h1>
   </div>
 </template>
 
@@ -42,7 +40,7 @@ export default {
       }
     })
     return {
-      job: computed(()=> AppState.activejob),
+      jobs: computed(()=> AppState.activeJob),
       async destroy(){
         try {
           await jobsService.destroy(route.params.id)

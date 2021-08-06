@@ -1,5 +1,5 @@
 <template>
-  <div class="house m-2 bg-light shadow grow">
+  <div class="house m-2 bg-light shadow grow rounded">
     <router-link :to="{name: 'HouseDetails', params: {id: house.id}}" >
       <img :src="house.imgUrl" alt="" class="w-100">
       <div class="p-3">
