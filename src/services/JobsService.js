@@ -8,6 +8,7 @@ class JobsService{
   }
   async getJobById(id) {
     let res = await sandbox.get(`/jobs/${id}`)
+    console.log(res.data)
     AppState.activeJob = res.data
   }
   async createJob(job) {

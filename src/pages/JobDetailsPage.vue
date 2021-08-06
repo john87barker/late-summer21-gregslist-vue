@@ -1,19 +1,19 @@
 <template>
   <div class="job-details-page text-center ">
-    <h2 class="m-4">The home you selected:</h2>
+    <h2 class="m-4">Job:</h2>
     <div class="row m-5">
       <div class="col-md-6 border border-secondary ">
-        <img :src="job.imgUrl" alt="job" class="my-3 img-fluid">
+        Will it be pretty?
       </div>
-      <div class="col-md-6 border border-secondary">
+      <div class="col-md-6 border border-secondary" >
         <h3 class="mt-5">
-        {{job.title}}  - {{job.company}} 
+        {{jobs.jobTitle}}  - {{jobs.company}} 
         </h3>
         <br>
-        {{job.description}}
+        {{jobs.description}}
         <br>
         <h5 class="pt-3">
-        Price per Hour: ${{job.rate}}
+        Price per Hour: ${{jobs.rate}}
         </h5>
         <div>
         <button class="btn btn-danger m-3" @click="destroy">Delete</button>
@@ -46,7 +46,7 @@ export default {
       async destroy(){
         try {
           await jobsService.destroy(route.params.id)
-          router.push({name: 'Home'})
+          router.push({name: 'Job'})
         } catch (error) {
           console.error(error)
         }
